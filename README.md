@@ -1,6 +1,6 @@
 # Introduction
 
-FishBuilder is a light hearted and marine-themed PowerShell script to give a basic interface for running MSBuild commands and other random commands that of use to a .Net developer. It is inspired by old-school console applications and was a learning tool for implementing such an interface using PowerShell.
+FishBuilder is a light hearted and marine-themed PowerShell script to give a basic interface for running MSBuild commands and other random commands of use to a .Net developer. It is inspired by old-school console applications and was a learning tool for implementing such an interface using PowerShell.
 
 The most common use case is for when a Visual Studio solution contains a huge number of projects resulting in a long compile time. To reduce the compile time it is possible to build individual projects with msbuild commands that you prepare in advance. In a similar way you may want to run specific test suites easily without having to run all unit tests.
 
@@ -9,6 +9,16 @@ But remembering these commands and executing them is awkward so why not create a
 The script codifies a lot of the details about how to call msbuild (and other) commands from a PowerShell script, passing parameters to them etc. Also useful nuggets like reading envrionment variables, checking for admin priviliges etc. A simple Visual Studio solution containing two console applictions is included to demonstrate the script in action. In reality it would only be useful in a much more complex Visual Studio solution that contained multiple projects, project types, tests etc.
 
 I developed this script for a development environment that ran an instance of Solr within Vagrant. This was quite unreliable so commands to restart Vagrant are included.
+
+## Screenshots
+
+Main Menu
+
+![Main Menu](/mainmenu.png)
+
+Testing Sub-menu
+
+![Testing Menu](/submenu.png)
 
 ## Usage
 
@@ -19,7 +29,7 @@ Set the environment variable with PowerShell like the following
 
 
  
-## A couple of the useful features
+## Some of the useful features
 
 1. Makes sure the you have Administrator priviliges at startup
 1. Tells you what branch was built
